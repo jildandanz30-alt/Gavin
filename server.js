@@ -6,7 +6,7 @@ const fs      = require('fs');
 if (!process.env.CLERK_SECRET_KEY) {
     console.error('❌ ERROR: CLERK_SECRET_KEY tidak ditemukan!');
     console.error('   Set environment variable CLERK_SECRET_KEY di Railway dashboard.');
-    process.exit(1);
+    console.warn("⚠️  CLERK_SECRET_KEY tidak diset!");
 }
 
 const { clerkMiddleware, requireAuth, getAuth } = require('@clerk/express');
