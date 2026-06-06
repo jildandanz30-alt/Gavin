@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+
+# Environment variables (JANGAN di-push ke GitHub!)
+.env
+.env.local
+
+# Data files (opsional, hapus jika mau commit data awal)
+data/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
